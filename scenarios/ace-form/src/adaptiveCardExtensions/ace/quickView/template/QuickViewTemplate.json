@@ -1,0 +1,50 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "weight": "Bolder",
+            "text": "${title}"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Placeholder text",
+            "isRequired": true,
+            "label": "Required field",
+            "id": "requiredField",
+            "errorMessage": "Please enter a value",
+            "value": "${requiredField}"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Placeholder text",
+            "label": "Optional field",
+            "id": "optionalField",
+            "value": "${optionalField}"
+        },
+        {
+            "type": "Input.Toggle",
+            "title": "Simulate server-side error",
+            "id": "simulateError",
+            "value": "${simulateError}"
+        },
+        {
+            "type": "TextBlock",
+            "wrap": true,
+            "text": "${error}",
+            "$when": "${$root.error != \"\"}",
+            "color": "Attention"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "ace-form",
+    "libraryId": "4d7d7f59-0cf5-4278-a280-5bf6abc3b2a1",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ace-form",
+    "solutionShortDescription": "ace-form description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "Basic"
+  }
+}
